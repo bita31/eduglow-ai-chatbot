@@ -40,7 +40,7 @@ else:
     # Inisialisasi model menggunakan penulisan yang didukung sistem terbaru
     try:
         model = genai.GenerativeModel(
-            model_name="gemini-1.5-flash-latest",
+            model_name="gemini-pro",
             system_instruction=system_instruction
         )
     except Exception as e:
