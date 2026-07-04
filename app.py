@@ -39,10 +39,7 @@ else:
     
     # Inisialisasi model menggunakan penulisan yang didukung sistem terbaru
     try:
-        model = genai.GenerativeModel(
-            model_name="gemini-pro",
-            system_instruction=system_instruction
-        )
+        model = genai.GenerativeModel('gemini-pro')
     except Exception as e:
         st.error(f"Gagal memuat model: {e}")
 
